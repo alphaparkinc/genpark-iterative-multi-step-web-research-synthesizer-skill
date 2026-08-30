@@ -1,0 +1,38 @@
+{
+  "name": "genpark-iterative-multi-step-web-research-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Iterative multi-step web research synthesizer querying live sources, resolving contradictions, and generating deep citations.",
+  "author": "genpark",
+  "category": "deep-research",
+  "tags": [
+    "perplexity-pro",
+    "deep-research",
+    "web-synthesis",
+    "citation-grounding",
+    "multi-step-search"
+  ],
+  "inputs": {
+    "complex_research_query": {
+      "type": "string"
+    },
+    "search_depth_iterations": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "research_session_id": {
+      "type": "string"
+    },
+    "web_sources_scraped_count": {
+      "type": "integer"
+    },
+    "factual_grounding_score_pct": {
+      "type": "number"
+    },
+    "deep_research_report_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
